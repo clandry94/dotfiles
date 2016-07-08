@@ -1,0 +1,19 @@
+[user]
+	name = Conor Landry
+	email = clandry94@gmail.com
+[core]
+	excludesfile = ~/.gitignore
+[sendemail]
+	smtpserver = smtp.gmail.com
+	smtpuser = clandry94@gmail.com
+	smtpencryption = tls
+	smtpserverport = 587
+[sendmail]
+	smtpserver = /usr/local/bin/msmtp
+[color]
+	ui = true
+[alias]
+	up = !sh -c \"git commit -a -m \"Before rebase\" && git pull --rebase && git reset head^\"
+	wu = log --stat origin..@{0}
+	wup = log -p origin..@{0}
+        tree = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'
