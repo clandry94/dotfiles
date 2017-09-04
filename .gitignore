@@ -54,3 +54,6 @@ target/
 
 # rvm
 .rvm
+
+# stupid ds_store
+.DS_STORE
